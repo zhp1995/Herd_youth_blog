@@ -1,0 +1,125 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: url(../images/bei2.jpg) no-repeat 0px 0px;
+	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-attachment: fixed;
+	font-size: 16px;
+}
+.back-to-index{
+	position:absolute;
+	top: 10px;
+	right: 5%;
+	font-size: 14px;
+}
+.login-box {
+	width: 310px;
+	height: auto;
+	border-radius: 10px;
+	padding: 0px 10px 10px;
+	margin: 50px auto;
+	box-sizing: border-box;
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .7);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, .7);
+}
+
+.login-box h2 {
+	font-size: 1.2em;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 2px #000;
+}
+
+.login-box form {
+	width: 100%;
+}
+
+.login-box form p {
+	margin-bottom: 10px;
+	padding: 0px 10px;
+	font-size: 0.9em;
+}
+
+
+.login-box form input {
+	width: 70%;
+	margin-left: 15px;
+	padding: 7px 8px;
+	border: none;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 10px rgba(255, 211, 195, 0.9) inset;
+	-webkit-box-shadow: 0px 0px 10px rgba(255, 211, 195, 0.9) inset;
+	box-shadow: 0px 0px 15px rgba(228, 186, 80, 0.8) inset;
+	border: 1px solid rgb(247, 194, 117);
+	color: #666;
+	background: none;
+}
+.login-box form input[name='verfiyCode'] {
+	width: 25%;
+	margin-left: 0px;
+}
+.login-box form p span.pic {
+	width: 25%;
+	height: 28px;
+	border:1px solid #999;
+	float: right;
+	margin-right: 19%;
+	border-radius: 3px;
+}
+.login-box form p>a {
+	font-size: 0.8em;
+	float:right;
+	margin-right: 4%;
+	margin-top: -16px;
+	color:;
+}
+.login-box form p:last-child{
+	text-align: center;
+}
+.errormsg{
+    text-align: center;
+    color: red;
+}
+.login-box form button{
+	border:none;
+	width：20%;
+	width: 40%;
+	border-radius: 3px;
+	padding: 6px;
+	margin: 0 2%;
+	cursor:pointer;
+	transition:0.2s;
+}
+
+button[type="reset"]{
+	background:#fb7147; 
+}
+.login-box form button[type="reset"]:hover{
+	background:#e3562b;
+}
+
+button[type="button"]{
+	background: #f9ac3e;
+}
+.login-box form button[type="submit"]:hover{
+	background:#e29424;
+}
+@media (max-width:350px){
+	.login-box{
+		width:300px;
+		padding:0px;
+		padding-bottom:10px;
+	}
+}
+
+
+

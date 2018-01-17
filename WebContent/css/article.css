@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+/*---- article ----*/
+article,aside{
+	background: #fff;
+	height: auto;
+}
+#article{
+	margin: 20px 0 30px;
+}
+.textbox {
+	height: 130px;
+	overflow: hidden;
+}
+.blog .textbox:hover{
+	padding:0px 10px 0px 20px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.textbox h5{
+	font-size: 0.9em;
+	font-weight: 600;
+	color: #3d3d3d;
+}
+.textbox .blog-info{
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #526163;
+	height: 60px;
+	overflow: hidden;
+}
+.blog{
+	padding: 15px 0px;
+	height: 160px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background: #F7FCF9;
+	border-radius:3px;
+	position: relative;
+}
+
+.blog .pic{
+	overflow: hidden;
+	margin-right: -10px;
+}
+.blog img{
+	width: 100%;
+	height: 130px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.1s;
+	-o-transition: 0.1s;
+	transition: 0.5s;
+}
+
+.blog img:hover {
+	transform: scale(1.2, 1.2);
+	 /* transform 灞炴�鍚戝厓绱犲簲鐢�2D 鎴�3D 杞崲銆傝灞炴�鍏佽鎴戜滑瀵瑰厓绱犺繘琛屾棆杞�缂╂斁銆佺Щ鍔ㄦ垨鍊炬枩銆�
+	 	scale(x,y)	瀹氫箟 2D 缂╂斁杞崲銆�/
+	-ms-transform:scale(1.2, 1.2); 	/* IE 9 */
+	-moz-transform:scale(1.2, 1.2); 	/* Firefox */
+	-webkit-transform:scale(1.2, 1.2); /* Safari 鍜�Chrome */
+	-o-transform:scale(1.2, 1.2); 	/* Opera */
+}
+.blog>span{
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	z-index: 100;
+	padding: 5px 7px;
+}
+.author-info li{
+	float: left;
+	margin-right: 2em;
+}
+.author-info li:nth-of-type(2){
+	margin-right: 0em;
+}
+.author-info #heat{
+	font-size: 1.2em;
+	margin-right: 2px;
+	color: #F86D6C;
+}
+.blog .author-info {
+	height: 24px;
+	line-height: 24px;
+	color: #919898;
+	font-size: 0.82em;
+	overflow:hidden;
+}
+#pagenav .pagination{
+	margin-top: 0;
+	margin-left: -15px;
+}
+.pagination>li>a, .pagination>li>span{
+	padding: 0px 10px;
+	cursor: pointer;
+}
+.pagactive{
+	color: red;
+}
+.mypagenation{
+	margin-bottom:20px;
+}
+@media ( max-width :425px) {
+	.blog{
+		height:130px;
+	}
+	.blog .pic img {
+	   height: 100px;
+	}
+	.textbox{
+		height:100px;
+	}
+	.textbox h5,ul.author-info,.blog-info{
+		margin-bottom:5px;
+	}
+}
+@media ( max-width :380px) {
+	.blog{
+		height:120px;
+		
+	}
+	.blog .pic img {
+	   height: 90px;
+	}
+	.textbox{
+		height:90px;
+	}
+	.textbox h5{
+		margin-top:0px;
+	}
+}

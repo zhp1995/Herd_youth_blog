@@ -1,0 +1,89 @@
+@CHARSET "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+  	font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+  	 background: #FFf;
+  	 -webkit-font-smoothing: antialiased;
+}
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+ul li,a{
+	list-style: none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+/*----start-container----*/
+.container{
+	width: 75%;
+}
+.bg{
+	background:url(../images/bei3.jpg) no-repeat 0px 0px;
+	background-attachment: fixed;
+	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+#article{
+	margin: 20px 0px;
+}
+/*footer*/
+.footer-wrap{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 0.8em;
+	border-radius: 3px;
+	color: #504d50;
+	background: #6cc;
+}
+.footer-wrap p{
+	margin: 0;
+}
+
+/*sidebar*/
+.sidebar{
+	position: fixed;
+	bottom: 60px;
+	right: 50px;
+	display: none;
+	z-index:200;
+}
+.sidebar a{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+	display: block;
+	background: #555;
+	font-size: 1.4em;
+	color: #fff;
+}
+.sidebar a.return-top {
+	font-weight: 300;
+}
+.QR-code{
+	display: none;
+	position: fixed;
+	right: 70px;
+	bottom: 165px;
+}
+.QR-code img{
+	width: 150px;
+	height: 150px;
+}
+
+

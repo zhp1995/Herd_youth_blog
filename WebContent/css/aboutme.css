@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+#mypage{
+	margin: 0px auto;
+    font-size:16px;
+}
+#aboutme{
+	padding: 20px 0px;
+	background: #F7FCF9;
+	border-radius: 5px;
+	height:auto;
+    margin-bottom: 20px;
+}
+.personal-profile{
+	width:100%;
+	height:auto;
+	text-align: center;
+	font-size: 0.85em;
+	border-radius: 3px;
+	border-right: 2px solid rgb(194, 230, 240);
+}
+.personal-profile img{
+	border-radius:50%;
+	width: 73%;
+	border: 1px solid #c8c8c8;
+
+}
+.personal-profile img:hover {
+    transition: 0.3s;
+    border: 1px solid palegoldenrod;
+    box-shadow: 0px 2px 5px 5px palegoldenrod;
+}
+.personal-msg{
+	color:#666;
+	margin-top: 15px;
+}
+.personal-msg p{padding-right: 5px;}
+.personal-text h2{font-family: 'Architects Daughter', cursive;font-size: 1.5em;font-weight: 600;}
+.personal-text p{
+	font-size: 0.85em;
+	text-indent: 2em;
+	line-height: 24px;
+	padding-right: 10px;
+}
+.personal-text p:lastchild{
+	float:right;
+}
+.personal-text p span.name{
+	color:#428bca;
+}
+
+@media ( max-width :767px) {
+	.personal-profile{
+		border-right:none;
+	}
+	.personal-text{
+	margin-top:20px;
+		border-top: 2px solid rgb(194, 230, 240);
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	

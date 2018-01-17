@@ -1,0 +1,203 @@
+@CHARSET "UTF-8";
+
+#new{
+	width:100%;
+    margin: 100px auto 50px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#newbox{
+    height:auto;
+    padding: 15px 30px;
+    background: #eff8f1;
+    border-radius:3px;
+}
+.blog{
+	background:#fff;
+}
+.t_nav{
+    height:38px;
+    margin: 0px 0px 0px -15px;
+    line-height:38px;
+    font-size:0.9em;
+    text-align:center;
+}
+.t_nav>p{
+	color:#fff;
+    padding:0px 10px;
+    background:#77d549;
+    border-radius:3px;
+    float: left;
+}
+.t_nav>p a{
+	color:#fff;
+}
+.t_nav>p a:hover{
+	color:#428bca;
+}
+.t_nav>p span#directory{
+    
+}
+.content{
+    height: inherit;
+    width:100%;
+    margin:10px auto;
+}
+.content h2 {
+    font-size:1em;
+    font-weight:600;
+    color:#000;
+    text-align: center;
+}
+.content .status{
+    font-size: 0.8em;
+    color:#999;
+    border:1px dashed #999;
+    padding:5px 0;
+    border-radius:3px;
+    text-align: center;
+    margin: 20px auto;
+}   
+.content .status span{
+    margin-right:10px;
+}
+.infos{
+	overflow:hidden;
+	font-size: 0.9em;
+	text-intent:2em;
+	line-height: 28px;
+	margin: 20px auto;
+}
+.infos p{
+	text-indent:2em;
+}
+.infos img {
+    display: block;
+    margin: 20px auto 20px;
+    max-width: 100%;
+    background: none repeat scroll 0 0 #fff;
+    vertical-align: middle;
+    text-align: center;
+    height: auto!important;
+}
+
+.interact {
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+.article-reword, .article-up, .article-comment {
+    z-index: 2;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.article-reword .icon, .article-up .icon, .article-comment .icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+.article-reword .icon {
+    background: url(../images/money01.png) no-repeat 50%;
+}
+.article-up .icon {
+    background: url(../images/zan01.png) no-repeat 50%;
+}
+.article-comment .icon {
+    background: url(../images/comment01.png) no-repeat 50%;
+}
+.article-reword .icon:hover {
+    background: url(../images/money02.png) no-repeat 50%;
+}
+.article-up .icon:hover {
+    background: url(../images/zan02.png) no-repeat 50%;
+}
+.article-comment .icon:hover {
+    background: url(../images/comment02.png) no-repeat 50%;
+}
+.article-reword span.text, .article-up span.text, .article-comment span.text {
+    color: #a1a1a1;
+    font-size: 14px;
+}
+.reword{
+	position:absolute;
+	left: 15%;
+	top: -55%;
+	display:none;
+}
+.reword img{
+	width: 150px;
+	height: auto;
+	}
+/* 评论 */
+.comments{
+	width:100%;
+	color: #999;
+	background: rgb(246, 246, 246);
+	height: auto;
+	margin: 20px auto;
+	border-radius: 3px;
+	font-size: 0.9em;
+}
+.hd-comment {
+    padding: 8px 25px 15px 25px;
+    overflow: auto;
+}
+.comments textarea {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    padding: 3px;
+    -webkit-transition: height .4s;
+    transition: height .4s;
+    margin: 10px 0 10px 0;
+    float: left;
+    clear: both;
+}
+.comments .word-right {
+    float: right;
+}
+#comment-btn {
+    background: #2ecca9;
+    color: #fff;
+    line-height: 30px;
+    padding: 0px 20px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    float: left;
+    border-radius: 4px;
+}
+
+@media (max-width:480px){
+	#newbox{
+		padding:10px 10px;
+	}
+	.t_nav{
+	margin:0px;
+	}
+	.article-reword .icon, .article-up .icon, .article-comment .icon {
+		width:45px;
+		height:45px;
+		background-size:60%;
+	}
+	.interact span.text{
+		font-size:0.8em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

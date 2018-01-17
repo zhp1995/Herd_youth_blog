@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tjz.mapper.ArticleMapper">
+
+   <select id="getCatelogy" resultType="catelogy">
+       select catelogy,count(*) as num from article group by catelogy
+   </select>
+   
+ <!--   <select id="getArticleByIn" resultType="article">
+       select * from article 
+       <where>
+           article_id in 
+           <if test="size!=0">
+	           <foreach collection="article_id" item="id" open="(" close=")" separator=",">
+	               #{id}
+	           </foreach>
+           </if>
+           <if test="size==0">
+               ("")
+           </if>
+       </where>
+   </select> -->
+   
+   <delete id="delArticles">
+       delete from article where article_id in
+       <foreach collection="ids" item="id" open="(" close=")" separator=",">
+           #{id}
+       </foreach>
+   </delete>
+</mapper>
